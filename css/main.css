@@ -49,7 +49,7 @@ img {
   height: auto;
 }
 
-.list {
+li {
   padding: 0px;
   margin: 0px;
   list-style: none;
@@ -473,16 +473,22 @@ img {
 @media screen and (min-width: 1440px) {
   .hero {
     min-height: 750px;
+  }
+  .hero-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    background-image: url(../../image/Card1.svg), url(../../image/Card2.svg), url(../../image/MobileMockup.svg);
+    background-position: right 215px top 140px, right -25px bottom 135px, right 90px center;
+    background-size: 400px;
   }
   .hero-content {
     min-width: 540px;
     min-height: 234px;
+    padding: 258px 0;
   }
   .hero-text {
     margin-bottom: 24px;
@@ -492,6 +498,32 @@ img {
   .hero-button {
     min-width: 196px;
     min-height: 50px;
+  }
+}
+
+.advantages-wrapper {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.advantages-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .advantages-wrapper {
+    padding-top: 181px;
+    padding-bottom: 68px;
+  }
+  .advantages-title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 80px;
   }
 }
 /*# sourceMappingURL=main.css.map */

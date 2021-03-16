@@ -1,0 +1,23 @@
+.advantages-wrapper {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+.advantages-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+@media screen and (min-width: 1440px) {
+  .advantages-wrapper {
+    padding-top: 181px;
+    padding-bottom: 68px;
+  }
+  .advantages-title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 80px;
+  }
+}

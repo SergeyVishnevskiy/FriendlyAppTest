@@ -31,12 +31,21 @@
 @media screen and (min-width: 1440px) {
   .hero {
     min-height: 750px;
+    // display: flex;
+    // align-items: center;
+  }
+  .hero-wrapper {
     display: flex;
-    align-items: center;
+    align-items: baseline;
+    // background-image: url(../../image/Card1.png), url(../../image/Card2.png), url(../../image/iPhoneX.png), url(../../image/Circle.png);
+    background-image: url(../../image/Card1.svg), url(../../image/Card2.svg), url(../../image/MobileMockup.svg);
+    background-position: right 215px top 140px, right -25px bottom 135px, right 90px center;
+    background-size: 400px;
   }
   .hero-content {
     min-width: 540px;
     min-height: 234px;
+    padding: 258px 0;
   }
   .hero-text {
     margin-bottom: 24px;
