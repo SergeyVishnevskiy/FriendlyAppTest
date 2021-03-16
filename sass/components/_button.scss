@@ -1,0 +1,39 @@
+.button {
+  min-width: 100px;
+  min-height: 35px;
+  border-radius: 8px;
+  color: $white-color;
+  background-color: $accent-color;
+  color: $secondary-text-color;
+  outline: none;
+  border: none;
+  &:hover,
+  &:focus {
+    background-color: #f1e4ff;
+    border: 2px solid $accent-color;
+    color: $accent-color;
+  }
+}
+.primary-deck {
+  min-width: 100px;
+  min-height: 40px;
+  @media screen and (min-width: 1200px) {
+    min-width: 170px;
+    min-height: 57px;
+  }
+}
+.primary {
+  min-width: 100px;
+  min-height: 35px;
+  margin-bottom: 20px;
+}
+.secondary {
+  color: #2500f9;
+  background-color: transparent;
+  min-width: 120px;
+  min-height: 40px;
+  @media screen and (min-width: 1040px) {
+    min-width: 170px;
+    min-height: 57px;
+  }
+}
