@@ -24,7 +24,12 @@
 <symbol id="icon-menu" viewBox="0 0 48 32">
 <path d="M0 5.333v-5.333h48v5.333h-48zM0 18.667h48v-5.333h-48v5.333zM0 32h48v-5.333h-48v5.333z"></path>
 </symbol>
-
+<symbol id="icon-logo" viewBox="0 0 32 32">
+<path fill="#f22bb2" style="fill: var(--color1, #f22bb2)" d="M0.658 32h10.849c5.145 0 9.315-4.171 9.315-9.315h-10.849c-5.145 0-9.315 4.171-9.315 9.315z"></path>
+<path fill="#9b44ff" style="fill: var(--color2, #9b44ff)" d="M1.143 9.315v13.699c5.145 0 9.315-4.171 9.315-9.315v-13.699c-5.145 0-9.315 4.17-9.315 9.315z"></path>
+<path fill="#fe9a22" style="fill: var(--color3, #fe9a22)" d="M31.342 0h-10.849c-5.145 0-9.315 4.17-9.315 9.315h10.849c5.145 0 9.315-4.17 9.315-9.315z"></path>
+<path fill="#2ec5ce" style="fill: var(--color4, #2ec5ce)" d="M31.342 22.137v-13.699c-5.145 0-9.315 4.17-9.315 9.315v13.699c5.145 0 9.315-4.171 9.315-9.315z"></path>
+</symbol>
 
 </defs>
 </svg>

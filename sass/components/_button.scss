@@ -1,12 +1,16 @@
 .button {
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.43;
   min-width: 100px;
   min-height: 35px;
   border-radius: 8px;
   color: $white-color;
   background-color: $accent-color;
-  color: $secondary-text-color;
   outline: none;
   border: none;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: #f1e4ff;
@@ -15,25 +19,17 @@
   }
 }
 .primary-deck {
-  min-width: 100px;
-  min-height: 40px;
-  @media screen and (min-width: 1200px) {
-    min-width: 170px;
-    min-height: 57px;
-  }
 }
 .primary {
-  min-width: 100px;
-  min-height: 35px;
   margin-bottom: 20px;
 }
 .secondary {
-  color: #2500f9;
-  background-color: transparent;
-  min-width: 120px;
-  min-height: 40px;
-  @media screen and (min-width: 1040px) {
-    min-width: 170px;
-    min-height: 57px;
-  }
+  background-color: #f1e4ff;
+  color: $accent-color;
+}
+.secondary:hover,
+.secondary:focus {
+  background-color: $accent-color;
+  border: 2px solid $accent-color;
+  color: #f1e4ff;
 }

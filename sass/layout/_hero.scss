@@ -1,0 +1,50 @@
+.hero {
+  background-color: $black-color;
+  min-height: 300px;
+}
+.hero-wrapper {
+  background-image: url(../../image/mobile.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 215px;
+}
+.hero-content {
+  width: 280px;
+  min-height: 150px;
+}
+.hero-title {
+  color: $secondary-text-color;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 70px;
+}
+.hero-text {
+  margin-bottom: 24px;
+  font-size: 14px;
+  line-height: 1.2;
+}
+.hero-button {
+  min-width: 126px;
+  min-height: 40px;
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    min-height: 750px;
+    display: flex;
+    align-items: center;
+  }
+  .hero-content {
+    min-width: 540px;
+    min-height: 234px;
+  }
+  .hero-text {
+    margin-bottom: 24px;
+    font-size: 18px;
+    line-height: 1.78;
+  }
+  .hero-button {
+    min-width: 196px;
+    min-height: 50px;
+  }
+}
