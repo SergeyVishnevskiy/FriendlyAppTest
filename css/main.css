@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -33,14 +34,12 @@ h6 {
 }
 
 p {
-  color: #ffffff;
   margin: 0;
   padding: 0;
 }
 
 ul {
-  -webkit-padding-start: 10px;
-          padding-inline-start: 10px;
+  padding: 0;
 }
 
 img {
@@ -210,6 +209,121 @@ li {
   background-color: #9b44ff;
   border: 2px solid #9b44ff;
   color: #f1e4ff;
+}
+
+@media screen and (min-width: 1200px) {
+  .secondary {
+    margin-left: 14px;
+  }
+}
+
+/* Слайдер */
+/* Слайдер запущен */
+/* Слайдер с точками */
+/* Ограничивающая оболочка */
+.slick-list {
+  overflow: hidden;
+}
+
+/* Лента слайдов */
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Слайд */
+/* Слайд активный (показывается) */
+/* Слайд основной */
+/* Слайд по центру */
+/* Клонированный слайд */
+/* Стрелка */
+/* Стрелка влево */
+/* Стрелка вправо */
+/* Стрелка не активная */
+/* Точки (булиты) */
+/* Активная точка */
+/* Элемент точки */
+/* Элемент точки */
+.slider {
+  position: relative;
+  padding: 0 79px;
+}
+
+.slider .slick-arrow {
+  position: absolute;
+  top: 50%;
+  margin: -30px 0 0 0;
+  z-index: 10;
+  font-size: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #f9f9f9;
+  background-color: #f9f9f9;
+  outline: none;
+}
+
+.slider .slick-arrow.slick-prev {
+  left: 0;
+  background: url(../../svg/arrowLeft.svg) 0 0/100% no-repeat;
+  background-size: 22px 14px;
+  background-position: left 8px top 12px;
+}
+
+.slider .slick-arrow.slick-next {
+  right: 0;
+  background: url(../../svg/arrowRight.svg) 0 0/100% no-repeat;
+  background-size: 22px 14px;
+  background-position: right 8px bottom 12px;
+}
+
+.slider__item {
+  text-align: center;
+  margin: 0 48px;
+  opacity: 0.8;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.slider__item.slick-center {
+  opacity: 1;
+}
+
+.slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider .slick-dots li {
+  margin: 0px 4px;
+}
+
+.slider .slick-dots li button {
+  font-size: 0;
+  width: 8px;
+  height: 11px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background-color: #d9dbe1;
+}
+
+.slider .slick-dots li.slick-active button {
+  width: 18px;
+  height: 12px;
+  background-color: #2ec5ce;
+  border-radius: 25px;
 }
 
 .header {
@@ -423,7 +537,7 @@ li {
 
 @media screen and (min-width: 1440px) {
   .navigation {
-    margin-right: 198px;
+    margin-right: 178px;
   }
   .logo-wrapper {
     margin-right: 305px;
@@ -432,6 +546,11 @@ li {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+  }
+  .navigation-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -460,6 +579,7 @@ li {
 }
 
 .hero-text {
+  color: #ffffff;
   margin-bottom: 24px;
   font-size: 14px;
   line-height: 1.2;
@@ -506,6 +626,11 @@ li {
   padding-bottom: 35px;
 }
 
+.advantages-list {
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-title {
   font-weight: 800;
   font-size: 24px;
@@ -514,16 +639,139 @@ li {
   text-align: center;
 }
 
+.advantages-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 245px;
+  margin: 0 auto;
+}
+
+.advantages-item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantages-card {
+  margin: 0 auto;
+}
+
+.svg-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #fafafa;
+  margin: 0 auto 16px;
+}
+
+.advantages-svg {
+  width: 24px;
+  height: 24px;
+}
+
+.advantages-item-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.56;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.advantages-item-text {
+  line-height: 1.63;
+  text-align: center;
+}
+
 @media screen and (min-width: 1440px) {
   .advantages-wrapper {
     padding-top: 181px;
-    padding-bottom: 68px;
+    padding-bottom: 76px;
+  }
+  .advantages-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .advantages-title {
     text-align: left;
     font-size: 40px;
     line-height: 1.6;
     margin-bottom: 80px;
+  }
+  .advantages-item {
+    margin-bottom: 0;
+    min-width: 255px;
+  }
+  .advantages-item:not(:last-child) {
+    margin-right: 60px;
+  }
+  .advantages-card {
+    margin: 0;
+    padding: 16px 0;
+  }
+  .linedown {
+    background-image: url(../../svg/linedown.svg);
+    background-repeat: no-repeat;
+    background-position: right top 46px;
+  }
+  .lineup {
+    background-image: url(../../svg/lineup.svg);
+    background-repeat: no-repeat;
+    background-position: right top 25px;
+  }
+  .svg-wrapper {
+    margin: 0 16px 16px 0;
+  }
+  .svg-wrapper:hover {
+    -webkit-animation: heartBeat;
+            animation: heartBeat;
+    -webkit-animation-duration: 3s;
+            animation-duration: 3s;
+  }
+  .advantages-item-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: left;
+  }
+  .advantages-item-text {
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: left;
+  }
+}
+
+.screens-wrapper {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.screens-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .screens-wrapper {
+    padding-top: 76px;
+    padding-bottom: 68px;
+  }
+  .screens-title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 96px;
   }
 }
 /*# sourceMappingURL=main.css.map */

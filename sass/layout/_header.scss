@@ -147,12 +147,15 @@
 }
 @media screen and (min-width: 1440px) {
   .navigation {
-    margin-right: 198px;
+    margin-right: 178px;
   }
   .logo-wrapper {
     margin-right: 305px;
   }
   .header-page {
     justify-content: start;
+  }
+  .navigation-button {
+    display: flex;
   }
 }
