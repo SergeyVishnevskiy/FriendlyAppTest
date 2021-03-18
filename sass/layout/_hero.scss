@@ -4,7 +4,7 @@
   padding-bottom: 25px;
 }
 .hero-wrapper {
-  background-image: url(./image/mobile.png);
+  background-image: url(../image/mobile.png);
   background-repeat: no-repeat;
   background-position: right;
   background-size: 215px;
@@ -42,7 +42,7 @@
   .hero-wrapper {
     display: flex;
     align-items: baseline;
-    background-image: url(./image/Card1.svg), url(./image/Card2.svg), url(./image/MobileMockup.svg);
+    background-image: url(../image/Card1.svg), url(../image/Card2.svg), url(../image/MobileMockup.svg);
     background-position: right 215px top 140px, right -25px bottom 135px, right 90px center;
     background-size: 400px;
   }
