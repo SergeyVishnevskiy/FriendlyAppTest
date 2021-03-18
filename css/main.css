@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -217,15 +216,10 @@ li {
   }
 }
 
-/* Слайдер */
-/* Слайдер запущен */
-/* Слайдер с точками */
-/* Ограничивающая оболочка */
 .slick-list {
   overflow: hidden;
 }
 
-/* Лента слайдов */
 .slick-track {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,28 +229,16 @@ li {
           align-items: flex-start;
 }
 
-/* Слайд */
-/* Слайд активный (показывается) */
-/* Слайд основной */
-/* Слайд по центру */
-/* Клонированный слайд */
-/* Стрелка */
-/* Стрелка влево */
-/* Стрелка вправо */
-/* Стрелка не активная */
-/* Точки (булиты) */
-/* Активная точка */
-/* Элемент точки */
-/* Элемент точки */
 .slider {
   position: relative;
-  padding: 0 79px;
+  padding: 0px 45px;
+  margin: 0 50px;
 }
 
 .slider .slick-arrow {
   position: absolute;
   top: 50%;
-  margin: -30px 0 0 0;
+  margin: -60px 0 0 0;
   z-index: 10;
   font-size: 0;
   width: 40px;
@@ -283,10 +265,16 @@ li {
 
 .slider__item {
   text-align: center;
-  margin: 0 48px;
-  opacity: 0.8;
+  margin: 0 48px 67px;
+  opacity: 0.5;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
+}
+
+.slider-img {
+  background-image: url(../../image/screen.png);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .slider__item.slick-center {
@@ -303,6 +291,7 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0;
 }
 
 .slider .slick-dots li {
@@ -324,6 +313,41 @@ li {
   height: 12px;
   background-color: #2ec5ce;
   border-radius: 25px;
+}
+
+.contact-form {
+  min-width: 400px;
+  text-align: center;
+}
+
+.input {
+  min-width: 380px;
+  height: 45px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: none;
+}
+
+.input:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.send {
+  min-width: 380px;
+  height: 45px;
+}
+
+@media screen and (min-width: 1440px) {
+  .contact-form {
+    width: 506px;
+    text-align: left;
+  }
+  .input {
+    width: 486px;
+  }
+  .send {
+    width: 486px;
+  }
 }
 
 .header {
@@ -557,6 +581,7 @@ li {
 .hero {
   background-color: black;
   min-height: 300px;
+  padding-bottom: 25px;
 }
 
 .hero-wrapper {
@@ -590,9 +615,19 @@ li {
   min-height: 40px;
 }
 
+.button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
 @media screen and (min-width: 1440px) {
   .hero {
     min-height: 750px;
+    padding-bottom: 0;
   }
   .hero-wrapper {
     display: -webkit-box;
@@ -618,6 +653,9 @@ li {
   .hero-button {
     min-width: 196px;
     min-height: 50px;
+  }
+  .button-wrapper {
+    display: block;
   }
 }
 
@@ -772,6 +810,32 @@ li {
     font-size: 40px;
     line-height: 1.6;
     margin-bottom: 96px;
+  }
+}
+
+.form-wrapper {
+  padding-top: 25px;
+  padding-bottom: 35px;
+}
+
+.form-title {
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (min-width: 1440px) {
+  .form-wrapper {
+    padding-top: 68px;
+    padding-bottom: 136px;
+  }
+  .form-title {
+    text-align: left;
+    font-size: 40px;
+    line-height: 1.6;
+    margin-bottom: 32px;
   }
 }
 /*# sourceMappingURL=main.css.map */
