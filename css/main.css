@@ -321,12 +321,12 @@ li {
 }
 
 .contact-form {
-  min-width: 400px;
+  min-width: 290px;
   text-align: center;
 }
 
 .input {
-  min-width: 380px;
+  min-width: 290px;
   height: 45px;
   background: #f9f9f9;
   border-radius: 8px;
@@ -381,9 +381,22 @@ li {
 }
 
 .send {
-  min-width: 380px;
+  min-width: 290px;
+  max-width: 400px;
   height: 45px;
   font-size: 18px;
+}
+
+@media screen and (min-width: 480px) {
+  .contact-form {
+    min-width: 400px;
+  }
+  .input {
+    min-width: 400px;
+  }
+  .send {
+    min-width: 400px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
@@ -865,6 +878,8 @@ li {
 .form-wrapper {
   padding-top: 25px;
   padding-bottom: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .form-title {
