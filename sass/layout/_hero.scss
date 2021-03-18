@@ -3,11 +3,13 @@
   min-height: 300px;
   padding-bottom: 25px;
 }
-.hero-wrapper {
-  background-image: url(../image/mobile.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: 215px;
+@media screen and (min-width: 480px) {
+  .hero-wrapper {
+    background-image: url(../image/mobile.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 215px;
+  }
 }
 .hero-content {
   width: 280px;
@@ -31,7 +33,12 @@
 }
 .button-wrapper {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+}
+@media screen and (min-width: 480px) {
+  .button-wrapper {
+    justify-content: flex-end;
+  }
 }
 
 @media screen and (min-width: 1440px) {
