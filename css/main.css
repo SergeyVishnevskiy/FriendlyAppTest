@@ -252,14 +252,14 @@ li {
 
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url(../../svg/arrowLeft.svg) 0 0/100% no-repeat;
+  background: url(../svg/arrowLeft.svg) 0 0/100% no-repeat;
   background-size: 22px 14px;
   background-position: left 8px top 12px;
 }
 
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url(../../svg/arrowRight.svg) 0 0/100% no-repeat;
+  background: url(../svg/arrowRight.svg) 0 0/100% no-repeat;
   background-size: 22px 14px;
   background-position: right 8px bottom 12px;
 }
@@ -273,7 +273,7 @@ li {
 }
 
 .slider-img {
-  background-image: url(../../image/screen.png);
+  background-image: url(../image/screen.png);
   background-position: center;
   background-repeat: no-repeat;
 }
@@ -801,12 +801,12 @@ li {
     padding: 16px 0;
   }
   .linedown {
-    background-image: url(../../svg/linedown.svg);
+    background-image: url(../svg/linedown.svg);
     background-repeat: no-repeat;
     background-position: right top 46px;
   }
   .lineup {
-    background-image: url(../../svg/lineup.svg);
+    background-image: url(../svg/lineup.svg);
     background-repeat: no-repeat;
     background-position: right top 25px;
   }
@@ -895,7 +895,7 @@ li {
   .form-image {
     min-width: 610px;
     min-height: 610px;
-    background-image: url(../../image/iPhoneX.png), url(../../image/mockCard.png), url(../../image/cricleBG.png);
+    background-image: url(../image/iPhoneX.png), url(../image/mockCard.png), url(../image/cricleBG.png);
     background-repeat: no-repeat;
     background-size: 290px 550px, 263px 231px, 607px 607px;
     background-position: bottom -50px left 89px, right 75px bottom 135px, left;

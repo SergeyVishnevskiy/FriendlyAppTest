@@ -25,13 +25,13 @@
 }
 .slider .slick-arrow.slick-prev {
   left: 0;
-  background: url(../../svg/arrowLeft.svg) 0 0 / 100% no-repeat;
+  background: url(../svg/arrowLeft.svg) 0 0 / 100% no-repeat;
   background-size: 22px 14px;
   background-position: left 8px top 12px;
 }
 .slider .slick-arrow.slick-next {
   right: 0;
-  background: url(../../svg/arrowRight.svg) 0 0 / 100% no-repeat;
+  background: url(../svg/arrowRight.svg) 0 0 / 100% no-repeat;
   background-size: 22px 14px;
   background-position: right 8px bottom 12px;
 }
@@ -42,7 +42,7 @@
   transition: all 0.3s ease 0s;
 }
 .slider-img {
-  background-image: url(../../image/screen.png);
+  background-image: url(../image/screen.png);
   background-position: center;
   background-repeat: no-repeat;
 }
