@@ -28,12 +28,14 @@
   background: url(../svg/arrowLeft.svg) 0 0 / 100% no-repeat;
   background-size: 22px 14px;
   background-position: left 8px top 12px;
+  cursor: pointer;
 }
 .slider .slick-arrow.slick-next {
   right: 0;
   background: url(../svg/arrowRight.svg) 0 0 / 100% no-repeat;
   background-size: 22px 14px;
   background-position: right 8px bottom 12px;
+  cursor: pointer;
 }
 .slider__item {
   text-align: center;
@@ -67,10 +69,12 @@
   border: none;
   outline: none;
   background-color: #d9dbe1;
+  cursor: pointer;
 }
 .slider .slick-dots li.slick-active button {
   width: 18px;
   height: 12px;
   background-color: #2ec5ce;
   border-radius: 25px;
+  cursor: pointer;
 }
