@@ -1,0 +1,30 @@
+.contact-form {
+  min-width: 400px;
+  text-align: center;
+}
+.input {
+  min-width: 380px;
+  height: 45px;
+  background: #f9f9f9;
+  border-radius: 8px;
+  border: none;
+}
+.input:not(:last-child) {
+  margin-bottom: 16px;
+}
+.send {
+  min-width: 380px;
+  height: 45px;
+}
+@media screen and (min-width: 1440px) {
+  .contact-form {
+    width: 506px;
+    text-align: left;
+  }
+  .input {
+    width: 486px;
+  }
+  .send {
+    width: 486px;
+  }
+}

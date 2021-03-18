@@ -1,6 +1,7 @@
 .hero {
   background-color: $black-color;
   min-height: 300px;
+  padding-bottom: 25px;
 }
 .hero-wrapper {
   background-image: url(../../image/mobile.png);
@@ -28,17 +29,19 @@
   min-width: 126px;
   min-height: 40px;
 }
+.button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+}
 
 @media screen and (min-width: 1440px) {
   .hero {
     min-height: 750px;
-    // display: flex;
-    // align-items: center;
+    padding-bottom: 0;
   }
   .hero-wrapper {
     display: flex;
     align-items: baseline;
-    // background-image: url(../../image/Card1.png), url(../../image/Card2.png), url(../../image/iPhoneX.png), url(../../image/Circle.png);
     background-image: url(../../image/Card1.svg), url(../../image/Card2.svg), url(../../image/MobileMockup.svg);
     background-position: right 215px top 140px, right -25px bottom 135px, right 90px center;
     background-size: 400px;
@@ -56,5 +59,8 @@
   .hero-button {
     min-width: 196px;
     min-height: 50px;
+  }
+  .button-wrapper {
+    display: block;
   }
 }
