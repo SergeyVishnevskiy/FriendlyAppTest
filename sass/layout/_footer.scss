@@ -1,0 +1,116 @@
+.footer {
+  background: $black-color;
+  min-height: 369px;
+  color: $third-text-color;
+  padding: 42px 0 10px;
+}
+.big-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.footer-list-wrapper {
+  min-width: 150px;
+  margin-bottom: 20px;
+}
+.little-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.56;
+  margin-bottom: 14px;
+}
+.footer-list-link {
+  font-size: 12px;
+  line-height: 1.71;
+  color: $third-text-color;
+}
+.googlePlay {
+  margin-bottom: 7px;
+}
+.footer-list-item:not(:last-child):not(:last-child) {
+  margin-bottom: 7px;
+}
+.copyright-text {
+  font-size: 10px;
+  line-height: 1.71;
+  color: #d9dbe1;
+}
+//============================join==========================\\
+.join {
+  width: 200px;
+}
+.join-list {
+  display: flex;
+  justify-content: center;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin: 0;
+}
+.join-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.join-list__link:hover,
+.join-list__link:focus {
+  background-color: $accent-color;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #f1e4ff;
+}
+.join-list__svg {
+  width: 17px;
+  height: 17px;
+  fill: $white-color;
+}
+.join-list__items:not(:last-child) {
+  margin-right: 24px;
+}
+//==========================================================\\
+@media screen and (min-width: 1440px) {
+  .footer {
+    min-height: 369px;
+    padding: 72px 0 22px;
+  }
+  .big-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 70px;
+  }
+  .footer-title {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.56;
+    margin-bottom: 24px;
+  }
+  .footer-list-link {
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  .footer-list-item:not(:last-child):not(:last-child) {
+    margin-bottom: 12px;
+  }
+  .footer-list-item .footer-list-link:hover {
+    color: $accent-color;
+    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .googlePlay {
+    margin-bottom: 16px;
+  }
+  .install {
+    padding-top: 10px;
+  }
+  .copyright-text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: #d9dbe1;
+  }
+}

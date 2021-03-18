@@ -8,13 +8,32 @@
   background: #f9f9f9;
   border-radius: 8px;
   border: none;
+  padding: 9px 24px 8px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
 }
 .input:not(:last-child) {
   margin-bottom: 16px;
 }
+.input:focus {
+  outline: none;
+  border-color: $accent-color;
+}
+.input:not(:placeholder-shown):valid {
+  border-color: green;
+}
+.input:not(:placeholder-shown):invalid {
+  border-color: red;
+}
+.input::placeholder {
+  color: #a8a8a8;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 1.87;
+}
 .send {
   min-width: 380px;
   height: 45px;
+  font-size: 18px;
 }
 @media screen and (min-width: 1440px) {
   .contact-form {
