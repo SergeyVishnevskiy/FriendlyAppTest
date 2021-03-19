@@ -405,7 +405,7 @@ li {
 
 @media screen and (min-width: 1440px) {
   .contact-form {
-    width: 506px;
+    width: 486px;
     text-align: left;
   }
   .input {
@@ -450,6 +450,7 @@ li {
 .header {
   position: relative;
   background-color: black;
+  padding: 18px 0;
 }
 
 .header-page {
@@ -459,6 +460,14 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.logo {
+  text-align: left;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #ffffff;
 }
 
 .logo-wrapper {
@@ -472,14 +481,6 @@ li {
           animation: heartBeat;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
-}
-
-.logo {
-  text-align: left;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.2;
-  color: #ffffff;
 }
 
 .logo-svg {
@@ -498,7 +499,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  min-height: 71px;
 }
 
 .navigation-list {
@@ -658,7 +658,7 @@ li {
 
 @media screen and (min-width: 1440px) {
   .navigation {
-    margin-right: 178px;
+    margin-right: 188px;
   }
   .logo-wrapper {
     margin-right: 305px;
@@ -678,14 +678,14 @@ li {
 .hero {
   background-color: black;
   min-height: 300px;
-  padding-bottom: 25px;
+  padding: 50px 0;
 }
 
 @media screen and (min-width: 480px) {
-  .hero-wrapper {
+  .hero {
     background-image: url(../image/mobile.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 7px bottom 120px;
     background-size: 215px;
   }
 }
@@ -698,14 +698,14 @@ li {
 .hero-title {
   color: #ffffff;
   margin-bottom: 16px;
+  font-size: 50px;
   font-weight: bold;
-  font-size: 70px;
 }
 
 .hero-text {
   color: #ffffff;
   margin-bottom: 24px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.2;
 }
 
@@ -735,6 +735,11 @@ li {
   .hero {
     min-height: 750px;
     padding-bottom: 0;
+    padding: 258px 0;
+    background-image: url(../image/Card1.svg), url(../image/Card2.svg), url(../image/MobileMockup.svg);
+    background-repeat: no-repeat;
+    background-position: right 345px top 140px, right 75px bottom 135px, right 220px center;
+    background-size: 400px;
   }
   .hero-wrapper {
     display: -webkit-box;
@@ -743,14 +748,13 @@ li {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    background-image: url(../image/Card1.svg), url(../image/Card2.svg), url(../image/MobileMockup.svg);
-    background-position: right 215px top 140px, right -25px bottom 135px, right 90px center;
-    background-size: 400px;
   }
   .hero-content {
     min-width: 540px;
     min-height: 234px;
-    padding: 258px 0;
+  }
+  .hero-title {
+    font-size: 70px;
   }
   .hero-text {
     margin-bottom: 24px;
@@ -766,7 +770,7 @@ li {
   }
 }
 
-.advantages-wrapper {
+.advantages {
   padding-top: 25px;
   padding-bottom: 35px;
 }
@@ -796,8 +800,26 @@ li {
   margin-bottom: 20px;
 }
 
+.advantages-item-title {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.56;
+  text-align: center;
+  margin-bottom: 4px;
+}
+
+.advantages-item-text {
+  line-height: 1.63;
+  text-align: center;
+}
+
 .advantages-card {
   margin: 0 auto;
+}
+
+.advantages-svg {
+  width: 24px;
+  height: 24px;
 }
 
 .svg-wrapper {
@@ -817,26 +839,8 @@ li {
   margin: 0 auto 16px;
 }
 
-.advantages-svg {
-  width: 24px;
-  height: 24px;
-}
-
-.advantages-item-title {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.56;
-  text-align: center;
-  margin-bottom: 4px;
-}
-
-.advantages-item-text {
-  line-height: 1.63;
-  text-align: center;
-}
-
 @media screen and (min-width: 1440px) {
-  .advantages-wrapper {
+  .advantages {
     padding-top: 181px;
     padding-bottom: 76px;
   }
@@ -857,6 +861,17 @@ li {
   }
   .advantages-item:not(:last-child) {
     margin-right: 60px;
+  }
+  .advantages-item-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: left;
+  }
+  .advantages-item-text {
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: left;
   }
   .advantages-card {
     margin: 0;
@@ -881,20 +896,9 @@ li {
     -webkit-animation-duration: 3s;
             animation-duration: 3s;
   }
-  .advantages-item-title {
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 1.56;
-    text-align: left;
-  }
-  .advantages-item-text {
-    font-size: 16px;
-    line-height: 1.63;
-    text-align: left;
-  }
 }
 
-.screens-wrapper {
+.screens {
   padding-top: 25px;
   padding-bottom: 35px;
 }
@@ -908,7 +912,7 @@ li {
 }
 
 @media screen and (min-width: 1440px) {
-  .screens-wrapper {
+  .screens {
     padding-top: 76px;
     padding-bottom: 68px;
   }
@@ -920,11 +924,9 @@ li {
   }
 }
 
-.form-wrapper {
+.form {
   padding-top: 25px;
   padding-bottom: 35px;
-  padding-right: 10px;
-  padding-left: 10px;
 }
 
 .form-title {
@@ -936,9 +938,11 @@ li {
 }
 
 @media screen and (min-width: 1440px) {
-  .form-wrapper {
+  .form {
     padding-top: 68px;
     padding-bottom: 136px;
+  }
+  .form-wrapper {
     min-height: 610px;
     display: -webkit-box;
     display: -ms-flexbox;
