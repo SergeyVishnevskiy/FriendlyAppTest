@@ -1,13 +1,13 @@
 .hero {
   background-color: $black-color;
   min-height: 300px;
-  padding-bottom: 25px;
+  padding: 50px 0;
 }
 @media screen and (min-width: 480px) {
-  .hero-wrapper {
+  .hero {
     background-image: url(../image/mobile.png);
     background-repeat: no-repeat;
-    background-position: right;
+    background-position: right 7px bottom 120px;
     background-size: 215px;
   }
 }
@@ -18,13 +18,13 @@
 .hero-title {
   color: $secondary-text-color;
   margin-bottom: 16px;
+  font-size: 50px;
   font-weight: bold;
-  font-size: 70px;
 }
 .hero-text {
   color: $secondary-text-color;
   margin-bottom: 24px;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.2;
 }
 .hero-button {
@@ -45,18 +45,22 @@
   .hero {
     min-height: 750px;
     padding-bottom: 0;
+    padding: 258px 0;
+    background-image: url(../image/Card1.svg), url(../image/Card2.svg), url(../image/MobileMockup.svg);
+    background-repeat: no-repeat;
+    background-position: right 345px top 140px, right 75px bottom 135px, right 220px center;
+    background-size: 400px;
   }
   .hero-wrapper {
     display: flex;
     align-items: baseline;
-    background-image: url(../image/Card1.svg), url(../image/Card2.svg), url(../image/MobileMockup.svg);
-    background-position: right 215px top 140px, right -25px bottom 135px, right 90px center;
-    background-size: 400px;
   }
   .hero-content {
     min-width: 540px;
     min-height: 234px;
-    padding: 258px 0;
+  }
+  .hero-title {
+    font-size: 70px;
   }
   .hero-text {
     margin-bottom: 24px;

@@ -1,9 +1,11 @@
-.form-wrapper {
+.form {
   padding-top: 25px;
   padding-bottom: 35px;
-  padding-right: 10px;
-  padding-left: 10px;
 }
+// .form-wrapper {
+//   padding-right: 10px;
+//   padding-left: 10px;
+// }
 .form-title {
   font-weight: 800;
   font-size: 24px;
@@ -13,9 +15,11 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .form-wrapper {
+  .form {
     padding-top: 68px;
     padding-bottom: 136px;
+  }
+  .form-wrapper {
     min-height: 610px;
     display: flex;
     justify-content: space-between;

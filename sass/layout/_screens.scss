@@ -1,23 +1,23 @@
-.screens-wrapper {
+.screens {
   padding-top: 25px;
   padding-bottom: 35px;
-}
-.screens-title {
-  font-weight: 800;
-  font-size: 24px;
-  line-height: 1.2;
-  margin-bottom: 40px;
-  text-align: center;
+  &-title {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+    text-align: center;
+  }
 }
 @media screen and (min-width: 1440px) {
-  .screens-wrapper {
+  .screens {
     padding-top: 76px;
     padding-bottom: 68px;
-  }
-  .screens-title {
-    text-align: left;
-    font-size: 40px;
-    line-height: 1.6;
-    margin-bottom: 96px;
+    &-title {
+      text-align: left;
+      font-size: 40px;
+      line-height: 1.6;
+      margin-bottom: 96px;
+    }
   }
 }
