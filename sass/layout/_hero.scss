@@ -2,7 +2,33 @@
   background-color: $black-color;
   min-height: 300px;
   padding: 50px 0;
+  &-content {
+    width: 280px;
+    min-height: 150px;
+  }
+  &-title {
+    color: $secondary-text-color;
+    margin-bottom: 16px;
+    font-size: 50px;
+    font-weight: bold;
+  }
+  &-text {
+    color: $secondary-text-color;
+    margin-bottom: 24px;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+  &-button {
+    min-width: 126px;
+    min-height: 40px;
+  }
 }
+
+.button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 @media screen and (min-width: 480px) {
   .hero {
     background-image: url(../image/mobile.png);
@@ -10,32 +36,6 @@
     background-position: right 7px bottom 120px;
     background-size: 215px;
   }
-}
-.hero-content {
-  width: 280px;
-  min-height: 150px;
-}
-.hero-title {
-  color: $secondary-text-color;
-  margin-bottom: 16px;
-  font-size: 50px;
-  font-weight: bold;
-}
-.hero-text {
-  color: $secondary-text-color;
-  margin-bottom: 24px;
-  font-size: 13px;
-  line-height: 1.2;
-}
-.hero-button {
-  min-width: 126px;
-  min-height: 40px;
-}
-.button-wrapper {
-  display: flex;
-  justify-content: center;
-}
-@media screen and (min-width: 480px) {
   .button-wrapper {
     justify-content: flex-end;
   }
@@ -50,26 +50,26 @@
     background-repeat: no-repeat;
     background-position: right 345px top 140px, right 75px bottom 135px, right 220px center;
     background-size: 400px;
-  }
-  .hero-wrapper {
-    display: flex;
-    align-items: baseline;
-  }
-  .hero-content {
-    min-width: 540px;
-    min-height: 234px;
-  }
-  .hero-title {
-    font-size: 70px;
-  }
-  .hero-text {
-    margin-bottom: 24px;
-    font-size: 18px;
-    line-height: 1.78;
-  }
-  .hero-button {
-    min-width: 196px;
-    min-height: 50px;
+    &-wrapper {
+      display: flex;
+      align-items: baseline;
+    }
+    &-content {
+      min-width: 540px;
+      min-height: 234px;
+    }
+    &-title {
+      font-size: 70px;
+    }
+    &-text {
+      margin-bottom: 24px;
+      font-size: 18px;
+      line-height: 1.78;
+    }
+    &-button {
+      min-width: 196px;
+      min-height: 50px;
+    }
   }
   .button-wrapper {
     display: block;
